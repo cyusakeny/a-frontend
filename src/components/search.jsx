@@ -4,7 +4,7 @@ import {  faBell,faMessage,faSearch, faSortDown} from "@fortawesome/free-solid-s
 const Search =()=>{
     const [value, setBegin] = React.useState(new Date());
     return(
- <div className="h-[9.7%] flex items-center bg-white pl-[3%] space-x-[9%]">
+ <div className="h-[60px] flex items-center bg-white pl-[3%] space-x-[9%]">
     <div className="flex flex-row">
     <span className="text-gray-400 bg-gray-200 rounded-l-md border-r-[1px] p-[2%]">
         <FontAwesomeIcon icon={faSearch} className="text-base"/>

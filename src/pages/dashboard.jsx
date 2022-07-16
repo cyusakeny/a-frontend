@@ -5,9 +5,9 @@ import SideBar from "../components/sidebar";
 
 const Dashboard = ()=>{
 return(
-   < div className="flex flex-row overflow-y-visible">
+   < div className="flex flex-row h-auto ">
     <SideBar/>
-    <div className="border-2 h-auto border-black w-full bg-gray-100 ">
+    <div className=" overflow-y-visible w-full bg-gray-100 ">
         <Search/>
         <Charts/>
         <ProductsTable/>

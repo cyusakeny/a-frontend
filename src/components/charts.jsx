@@ -14,7 +14,7 @@ const Charts = () => {
          ,{ name: "Sun 10", pv:"5k", uv: "15k"}
     ]
 return(
-<div className="mt-[1%] bg-gray-100 pt-[3%] space-x-[2.5%] pr-[2%] flex flex-row ">
+<div className="mt-[1%] ml-[3%] bg-gray-100 pt-[3%] space-x-[2.5%] pr-[2%] flex flex-row ">
   <div className="flex flex-col bg-white  pl-[2%] ">
 <span className=" ml-[3.5%] text-[#7A121B] text-md mt-[3%]">
 Revenue
