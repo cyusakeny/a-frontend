@@ -4,8 +4,10 @@ import {  faBell,faMessage,faSearch, faSortDown} from "@fortawesome/free-solid-s
 const Search =()=>{
     const [value, setBegin] = React.useState(new Date());
     return(
- <div className="h-[60px] flex items-center bg-white pl-[3%] space-x-[9%]">
-    <div className="flex flex-row">
+ <div className="h-[120px] md:h-[60px] flex flex-col md:flex-row w-full items-start 
+  md:items-center bg-white 
+ pl-[0%] md:pl-[3%]  md:space-x-[9%]">
+    <div className=" flex flex-row  pb-[10px] md:pb-[0px]  mt-[15px] md:mt-[0px]">
     <span className="text-gray-400 bg-gray-200 rounded-l-md border-r-[1px] p-[2%]">
         <FontAwesomeIcon icon={faSearch} className="text-base"/>
         </span>
@@ -24,7 +26,8 @@ className="rounded-r-md text-base bg-gray-200 outline-0 pl-[2%]"/>
             }}
           />
     </div>
-    <div className=" w-[42%] flex flex-row space-x-[3%] items-center">
+    <div className=" w-[42%] flex flex-row space-x-[3%]
+     items-center ml-[50%] md:ml-[0px] mt-[-90px] md:mt-[0px]">
      <FontAwesomeIcon icon={faMessage} className="text-gray-400 text-lg"/>
      <FontAwesomeIcon icon={faBell} className="text-gray-400 text-lg"/>
      <p className="flex flex-row w-[90%] items-center space-x-[4%] pl-[10%]">

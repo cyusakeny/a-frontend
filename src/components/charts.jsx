@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import { LineChart,CartesianGrid,XAxis,YAxis,Legend,Tooltip,Line } from "recharts";
+import { LineChart,CartesianGrid,XAxis,YAxis,Legend,Tooltip,Line,ResponsiveContainer } from "recharts";
 import { faSquare ,faShoppingBasket, faList } from "@fortawesome/free-solid-svg-icons";
 const Charts = () => {
     const data = [
@@ -14,8 +14,9 @@ const Charts = () => {
          ,{ name: "Sun 10", pv:"5k", uv: "15k"}
     ]
 return(
-<div className="mt-[1%] ml-[3%] bg-gray-100 pt-[3%] space-x-[2.5%] pr-[2%] flex flex-row ">
-  <div className="flex flex-col bg-white  pl-[2%] ">
+<div className="mt-[1%] space-y-[23px] md:space-y-[0px] md:ml-[3%] bg-gray-100 
+pt-[3%] space-x-[2.5%] md:pr-[2%] flex flex-col md:flex-row ">
+  <div className="flex flex-col bg-white w-[70%] pl-[2%] ">
 <span className=" ml-[3.5%] text-[#7A121B] text-md mt-[3%]">
 Revenue
 </span>
@@ -36,10 +37,11 @@ h-[17px] w-[17px] text-[#011C40]
 <span className="ml-[3.5%] text-md mb-[2%] my-[-1.5%]">$21,000,000 <span className="
 text-[#12755B]
 ">(+ 81230)</span></span>
+<ResponsiveContainer width={"100%"} height="100%">
   <LineChart
 layout="horizontal"
-          width={450}
-          height={250}
+          width={"100%"}
+          height={"100%"}
           data={data}
           margin={{
             top: 5,
@@ -62,6 +64,7 @@ layout="horizontal"
           <Line type="monotone" dataKey="pv" stroke="#011C40" activeDot={{ r: 8 }} />
           <Line type="monotone" dataKey="uv" stroke="#FF6F0B" />
         </LineChart>
+        </ResponsiveContainer>
   </div>
   <div className="w-[40%] text-white flex flex-col space-y-[11%] ">
   <div className=" bg-[#E6342B]/90 w-[100%] h-[47%] py-[12%] rounded-xl pl-[8%] pr-[1%] flex flex-col">

@@ -10,8 +10,8 @@ const SideBar =({ visible = true })=>{
     const showMenu=()=>{
         if(isOpen){
             return (
-                <div className="ml-[23.7%] -mt-[10%]  space-y-[6%] h-auto w-[65%] pt-[2%] flex flex-col  mb-[12%]
-                text-gray-600
+                <div className="ml-[23.7%] -mt-[10%]  space-y-[6%] h-auto w-[65%] pt-[2%] flex flex-col  mb-[12%] 
+                text-gray-600 
                 ">
                    <div className="flex flex-row w-[86%]  space-x-[9%] ">
                    <p className="w-[90%]">Products</p> 
@@ -31,8 +31,9 @@ const SideBar =({ visible = true })=>{
         return null;
     }
 return(
-    <div className={`${visible?'visible':'invisible'} flex-col bg-black w-[22%] top-0 left-0 sticky justify-center  h-screen
-    `}> 
+    <div className={`${visible?'visible':'invisible'} flex-col bg-black w-[0] 
+    md:w-[22%] top-0 left-0 sticky justify-center  h-screen
+    invisible md:visible `}> 
 
     {/* <span className="rounded-full border-[1px] border-gray-100 p-[2%]"> <FontAwesomeIcon icon={faArrowRight} 
     className="text-gray-300"/>

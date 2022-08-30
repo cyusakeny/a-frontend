@@ -3,7 +3,7 @@ import { faAdd, faSort} from "@fortawesome/free-solid-svg-icons";
 import Products from "./products";
 const ProductsTable = () => {
     return (
-        <div className=" ml-[3%] mr-[2.5%] pl-[1%] mt-[5%] pt-[1.7%] bg-white">
+        <div className=" ml-[3%] md:mr-[2.5%] pl-[1%] mt-[5%] pt-[1.7%] bg-white">
             <div className="flex flex-row ">
                 <span className="font-bold text-lg">Products</span>
                 <select className="ml-[59%] rounded-md mr-[3%] pl-[1%] pr-[2%] h-8 text-md outline-0" >
